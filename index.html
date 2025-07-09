@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,30 @@
     <link rel="stylesheet" href="style.css">
     <script type="module" src="./main.js"></script>
 </head>
+
 <body>
     <header>
-        <h1 id="heading"> The Weather App</h1>
+        <h1 id="heading"> Weather App</h1>
     </header>
     <main>
+        <section id="location-entery">
+            <label for="location-input">Enter Location</label>
+            <input id="location-input" type="text">
+            <button class="btn" id="get-weather-btn">Get Weather</button>
+        </section>
 
-        <form >
-            <label for="unit"></label>
-            <select name="unit" id="unit">
-                <option value="f">Farenheit</option>
-                <option value="c">Celcius</option>
-            </select>
-        </form>
+        <section id="today-weather">
 
-        <section id="weather-data-container">
-            <!-- Area that shows Weather of asked city-->
+            <div>
+                <p id="temp-box"></p>
+            </div>
+
+            <div></div>
+
         </section>
     </main>
     <footer></footer>
-    
+
 </body>
+
 </html>
