@@ -16,10 +16,6 @@ async function getWeather(location, YOUR_API_KEY) {
 
         weatherToday = weatherData.currentConditions;
         console.log(weatherToday);
-
-        //Show temperature 
-        const tempBox = document.getElementById('temp-box');
-        tempBox.innerHTML = (Number(weatherToday.temp) - 32) * (5 / 9); //in celcius
     }
     catch (err) {
         console.log(err);

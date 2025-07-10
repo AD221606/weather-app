@@ -24,15 +24,15 @@
         <section id="today-weather">
 
             <div>
-                <p id="temp-box"> -- °C</p>
-                <p class="temp-subtext" id="location">Location: -- .</p>
-                <p class="temp-subtext" id="real-feel">Real-Feel: -- °C</p>
+                <p id="temp-box"> <span id="temp-today"> -- </span> °C</p>
+                <p class="temp-subtext" id="location">Location: <span id="location">--</span> </p>
+                <p class="temp-subtext" id="real-feel">Real-Feel: <span id="real-feel"> -- </span>  °C</p>
             </div>
 
             <div>
                 <img class="weather-icon" src="./images/weather-icon.webp" alt="loading weather image">
-                <p class="weather-subtext">Sunrise:</p>
-                <p class="weather-subtext">Sunset: </p>
+                <p class="weather-subtext">Sunrise: <span id="sunrise-time"> -- </span></p>
+                <p class="weather-subtext">Sunset: <span id="sunset-time"> -- </span> </p>
             </div>
 
             <section id="next-five-days">
@@ -70,16 +70,24 @@
                     <p>Temp</p>
                     <p>Condition</p>
                 </div>
-                
+
             </section>
         </section>
 
 
         <section id="more-info">
-            <div class="info-card pop"><h2>UV Index</h2></div>
-            <div class="info-card pop"><h2>Wind</h2></div>
-            <div class="info-card pop"><h2>Precip</h2></div>
-            <div class="info-card pop"><h2>CloudCover</h2></div>
+            <div class="info-card pop">
+                <h2>UV Index</h2>
+            </div>
+            <div class="info-card pop">
+                <h2>Wind</h2>
+            </div>
+            <div class="info-card pop">
+                <h2>Precip</h2>
+            </div>
+            <div class="info-card pop">
+                <h2>CloudCover</h2>
+            </div>
         </section>
 
     </main>
