@@ -13,14 +13,17 @@
     font-style: normal;
 }
 
+body {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgb(0, 106, 255) 100%);
+}
+
 
 header {
-    font-size: large;
+    font-size: 3rem;
     font-weight: 300;
     padding: 20px;
     display: flex;
     flex-flow: column nowrap;
-    background-color: black;
     color: white;
     justify-content: center;
     align-items: center;
@@ -28,12 +31,95 @@ header {
 }
 
 main {
+    background-color: inherit;
     display: grid;
     justify-items: center;
-    align-items: center;
+    gap: 20px;
+    color: white;
+    padding: 20px;
 }
-#location-entry{
+
+#location-entry {
     display: flex;
     justify-content: center;
-    gap:20px
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    font-size: 1.2rem;
+
+}
+
+input,
+input:focus,
+input:hover,
+input:active,
+input:valid {
+    color: white;
+    border: 3px solid rgb(255, 255, 255);
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 5000s ease-in-out 0s;
+    color: white;
+    border: 3px solid rgb(255, 255, 255);
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+
+#today-weather {
+    width: 80vw;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+#temp-box {
+    font-size: 6rem;
+}
+
+#today-weather>div {
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.137);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.weather-icon {
+    height: 6rem;
+    align-self: end;
+}
+
+.temp-subtext {
+    font-size: 1.5rem;
+}
+
+.btn {
+    color: white;
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.137);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.pop:hover {
+    transform: scale(1.1);
 }
