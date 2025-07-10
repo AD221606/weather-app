@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="./images/weather-icon.webp" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script type="module" src="./main.js"></script>
 </head>
@@ -29,10 +30,58 @@
             </div>
 
             <div>
-                <img class="weather-icon" src="./images/loading-svgrepo-com.svg" alt="loading weather image">
+                <img class="weather-icon" src="./images/weather-icon.webp" alt="loading weather image">
+                <p class="weather-subtext">Sunrise:</p>
+                <p class="weather-subtext">Sunset: </p>
             </div>
 
+            <section id="next-five-days">
+                <div class="forecast pop">
+                    <h2>Tomorrow</h2>
+                    <img class="weather-icon" src="./images/loading-svgrepo-com.svg" alt="weather icon">
+                    <p>Temp</p>
+                    <p>Condition</p>
+                </div>
+
+                <div class="forecast pop">
+                    <h2>Day</h2>
+                    <img class="weather-icon" src="./images/loading-svgrepo-com.svg" alt="weather icon">
+                    <p>Temp</p>
+                    <p>Condition</p>
+                </div>
+
+                <div class="forecast pop">
+                    <h2>Day</h2>
+                    <img class="weather-icon" src="./images/loading-svgrepo-com.svg" alt="weather icon">
+                    <p>Temp</p>
+                    <p>Condition</p>
+                </div>
+
+                <div class="forecast pop">
+                    <h2>Day</h2>
+                    <img class="weather-icon" src="./images/loading-svgrepo-com.svg" alt="weather icon">
+                    <p>Temp</p>
+                    <p>Condition</p>
+                </div>
+
+                <div class="forecast pop">
+                    <h2>Day</h2>
+                    <img class="weather-icon" src="./images/loading-svgrepo-com.svg" alt="weather icon">
+                    <p>Temp</p>
+                    <p>Condition</p>
+                </div>
+                
+            </section>
         </section>
+
+
+        <section id="more-info">
+            <div class="info-card pop"><h2>UV Index</h2></div>
+            <div class="info-card pop"><h2>Wind</h2></div>
+            <div class="info-card pop"><h2>Precip</h2></div>
+            <div class="info-card pop"><h2>CloudCover</h2></div>
+        </section>
+
     </main>
     <footer></footer>
 
